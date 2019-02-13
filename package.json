@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-fp",
+  "version": "1.0.0",
+  "description": "First node js project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KwintenOlaerts/nodejs-fp.git"
+  },
+  "author": "Kwinten Olaerts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KwintenOlaerts/nodejs-fp/issues"
+  },
+  "homepage": "https://github.com/KwintenOlaerts/nodejs-fp#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "email-validator": "^2.0.4"
+  }
+}
