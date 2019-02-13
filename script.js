@@ -1,28 +1,23 @@
+
 const axios = require('axios');
-const emailMan = require('email-validator');
+const validator = require('email-validator');
+var mail = "test@email.com";
+var result = validator.validate(mail);
+
+console.log(result);
+
+
+
 
 // Make a request for a user with a given ID
-axios.get('/user?ID=12345')
+axios.get("https://haveibeenpwned.com/api/v2/breachedaccount/kwintenolaerts@hotmail.com", { headers: { 'User-Agent': 'lerr-tester'} })
   .then(function (response) {
     // handle success
-    console.log(response);
+    console.log(response.data);
   })
   .catch(function (error) {
     // handle error
     console.log(error);
   })
-  .then(function () {
-    // always executed
-  });
 
 
-axios.get('https://api.github.com/users/KwintenOlaerts')
-  .then(function(response){
-    console.log(response.data); // ex.: { user: 'Your User'}
-    console.log(response.status); // ex.: 200
-  });  
-
-
-
-const url = 'https://haveibeenpwned.com/api/v2/{service}/'
-axios.get(url).then(response => console.log(response));
